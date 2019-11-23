@@ -19,7 +19,6 @@ public class Util {
     public static SqlSession getsqlSession(){
         SqlSession  sqlSession = null;
         try {
-
             InputStream inputStream = Resources.getResourceAsStream("jdbc.xml");
             SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(inputStream);
             sqlSession = factory.openSession();
